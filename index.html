@@ -4,9 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UFO Finder</title>
+    <!--this is adding the CDN for Bootstraps content delivery network -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!--  This is the link to our stylesheet in the 'static' folder -->
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
-    
+  <!--navbar component at top of screen-->
+  <!--navbar-expand-lg for responsive mobile devices-->
+  <!--navbar-brand is Bootstrap style adds padding and font sizes by default-->
+  <!--href points to our index.html file-->
+  <!--UFO Sightings is text to display in navbar-->
+  <div class="wrapper">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="index.html">UFO Sightings</a>
+    </nav>
+  </div>
+    <div class="jumbotron"> 
+      <h1>The Truth Is Out There</h1>
+    </div>
+  <!--PAGE HEADER-->
+  <!--"container-fluid" creates container for other elements.Elements inside resize to fit width of browser-->
+  <!--"row" ensures that title and paragraph will align neatly along page-->
+  <!--"h3" is for the headline <small> will add extra styling to make the second part smaller-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3> "UFO Sightings: Fact or Fancy? <small>Ufologists Weigh In"</small><h3>
+
+                </div>
+                <div class="col-md-8" >
+                    <p>
+                      Are we alone in the universe? For millennia, humans have turned to the sky to answer this question. Now, thanks to research generously funded by W. Avy, a UFO-enthusiast and amateur ufologist, 
+                      we can supplement our sky-searching with data analysis."The release of this analysis is well-timed: It coincides with the celebration 
+                      of World UFO Day, which is a moment for ufologists around the world to connect, relax, and sample a range of UFO-themed snacks," 
+                      said Dr. Ursula F. Olivier, the world's preeminent expert on circular sightings. "Citizen-scientists can be especially helpful 
+                      in both cataloguing sightings—which is hugely helpful for us in our search for aliens—and in helping us celebrate the work that
+                      has already been done, such as this data visualization project, which will help us raise awareness of the ubiquity of sightings!"
+
+                      Not everyone is ready to celebrate, however. Local CEO and vocal anti-alien activist V. Isualize reached out to our reporters to 
+                      go on record as firmly opposed to any attempts to provide access to this data. "If there are aliens, they certainly would like to 
+                      be left alone," she stated, before directing us to the Leave Aliens Alone (LAA) community engagement initiative she founded and 
+                      funds.
+
+                      So what do YOU think? Are we alone in the universe? Are aliens trying to contact us, or do they want to be left alone? 
+                      Dig through the data yourself, and let us know what you see.
+                    </p>
+                </div>
+            </div>
+        </div>
+  <!--FILTER FOR DATA TABLE-->
+  <!--We will be accepting USER INPUT so we will use a 'form' tag-->
+  <!--'p' tag is for the title-->
+  <!--'ul' tag is for unordered list. The class 'list-group' is a bootstrap group and will add styling-->
+  <!--'li' tag is for list items = one for input, one for the button-->
+  <!--for="date">Enter Date is the prompt for the user-->
+  <!--'input' tag type='text' code will look for text input. placeholder will give user the location and format to enter date--> 
+  <!--id="datetime" is identified in the javaScript code to look for when button clicked-->
+  <!--id="filter-btn" was created in the javaScript code for the button function.type="button" by default button does nothing-->
+  <!--class="btn btn-default" adds Bootstrt styling "Filter Table" is the name of button-->
+  <div class="container-fluid">
+            <div class="row">
+                <div class=col-md-3>
+                  <form>
+                    <p>Filter Search</p>
+                    <ul class="list-group">
+                        <li class="list=group-item">
+                          <label for="date">Enter Date</label>
+                          <input type="text" placeholder="1/10/2010" id="datetime"/>
+                        </li>
+                        <li class="list-group-item">
+                          <button id="filter-btn" type="button" class= "btn btn-default">Filter Table</button>
+
+                        </li>
+                    </ul>
+                  </form>
+                </div>
+  <!--"table table-striped" table that is slightly striped to give variation between rows-->
+  <!--<thead> Setup for the table to hold the headers and rows-->
+  <!--<th> All info displayed as headers-->
+  <!--<tr> rows of data-->
+                <div class=col-md-9>
+                    <table class = "table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>City</th>
+                                <th>State</th>
+                                <th>Country</th>
+                                <th>Shape</th>
+                                <th>Duration</th>
+                                <th>Comments</th>
+                            </tr>
+                        </thead>
+
+                    </table>
+                </div>
+            </div>
+
+
+
+        </div>
+        
+
 </body>
 </html>
