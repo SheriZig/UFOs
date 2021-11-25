@@ -16,3 +16,7 @@ A site was created that contains the following elements:
 During the initial load of the site, all the data from the UFO sightings data table is displayed. The filters may be applied with multiple criteria or one at a time. 
 The below example is filtering only on the day. Notice that the date is added to the filter. When the user presses the ‘Enter’ key on the keyboard the data is filtered based on the date selected. 
 
+![image](https://user-images.githubusercontent.com/88912539/143364994-bdd4ae9e-93fe-4381-be61-c41af9d1e543.png)
+
+In addition to the date, a selection for a specific date can also be entered. Notice that there is a placeholder in the field that indicates that the filter will accept a two-character state abbreviation. If ‘nj’ is added to the field, the data table will be filtered by the date entered as well as for the state of ‘nj’ 
+
