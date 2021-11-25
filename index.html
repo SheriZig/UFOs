@@ -15,19 +15,22 @@
     <!--  This is the link to our stylesheet in the 'static' folder -->
     <link rel="stylesheet" href="static/css/style.css">
 </head>
-<body>
+<body class="bg-dark">
   <!--navbar component at top of screen-->
   <!--navbar-expand-lg for responsive mobile devices-->
   <!--navbar-brand is Bootstrap style adds padding and font sizes by default-->
   <!--href points to our index.html file-->
   <!--UFO Sightings is text to display in navbar-->
   <div class="wrapper">
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
       <a class="navbar-brand" href="index.html">UFO Sightings</a>
     </nav>
   </div>
     <div class="jumbotron"> 
-      <h1>The Truth Is Out There</h1>
+  <!--jumbotron is a bootstrap object for header or to make somethng stand out-->
+  <!--class='display-4'is the text inside the jumbotron-->
+  <!--The style is a larger thinner text-->
+      <h1 class="display-4">The Truth Is Out There</h1>
     </div>
   <!--PAGE HEADER-->
   <!--"container-fluid" creates container for other elements.Elements inside resize to fit width of browser-->
@@ -70,22 +73,34 @@
   <!--id="filter-btn" was created in the javaScript code for the button function.type="button" by default button does nothing-->
   <!--class="btn btn-default" adds Bootstrt styling "Filter Table" is the name of button-->
   <div class="container-fluid">
-            <div class="row">
-                <div class=col-md-3>
-                  <form>
-                    <p>Filter Search</p>
+        <div class="row">
+            <div class="col-md-3">
+                <form class="bg-dark">
+                    <p> Filter Search</p>
                     <ul class="list-group">
-                        <li class="list=group-item">
-                          <label for="date">Enter Date</label>
-                          <input type="text" placeholder="1/10/2010" id="datetime"/>
+                        <li class="list-group-item bg-dark">
+                            <label for="date">Enter Date</label>
+                            <input type="text" class="form-control" placeholder="1/10/2010" id="datetime" />
                         </li>
-                        <li class="list-group-item">
-                          <button id="filter-btn" type="button" class= "btn btn-default">Filter Table</button>
-
+                        <li class="list-group-item bg-dark">
+                            <label for="city">Enter a City</label>
+                            <input type="text" class="form-control" placeholder="roswell" id="city" />
+                        </li>
+                        <li class="list-group-item bg-dark">
+                            <label for="state">Enter a State</label>
+                            <input type="text" class="form-control" placeholder="ca" id="state" />
+                        </li>
+                        <li class="list-group-item bg-dark">
+                            <label for="country">Enter a Country</label>
+                            <input type="text" class="form-control" placeholder="us" id="country" />
+                        </li>
+                        <li class="list-group-item bg-dark">
+                            <label for="shape">Enter a Shape</label>
+                            <input type="text" class="form-control" placeholder="circle" id="shape" />
                         </li>
                     </ul>
-                  </form>
-                </div>
+                </form>
+            </div>
   <!--"table table-striped" table that is slightly striped to give variation between rows-->
   <!--<thead> Setup for the table to hold the headers and rows-->
   <!--<th> All info displayed as headers-->
@@ -103,15 +118,19 @@
                                 <th>Comments</th>
                             </tr>
                         </thead>
-
+                        <tbody></tbody>
                     </table>
                 </div>
-            </div>
-
-
-
-        </div>
-        
-
+             </div>
+        </div>  
+    </div>
+  
+<!--D3 link allows D3 to 'listen' to our code. ??? unknown where this like is located--> 
+  <!--data.js is the link to the data file we saved in the static folder-->
+  <!--app.js contains our javascript code for the page. It is stored in the static folder also-->     
+        <script src= "https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>   
+        <script src="static/js/data.js"></script>
+        <script src="static/js/app.js"></script>
+  
 </body>
 </html>
