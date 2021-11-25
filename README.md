@@ -11,3 +11,8 @@ A site was created that contains the following elements:
 -	Table of UFO data 
 -	Five options to filter the data (Date, City, State, Country, Shape)
 
+![image](https://user-images.githubusercontent.com/88912539/143364874-64089756-251d-49c9-8f6e-a7fba8683d25.png)
+
+During the initial load of the site, all the data from the UFO sightings data table is displayed. The filters may be applied with multiple criteria or one at a time. 
+The below example is filtering only on the day. Notice that the date is added to the filter. When the user presses the ‘Enter’ key on the keyboard the data is filtered based on the date selected. 
+
