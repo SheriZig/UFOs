@@ -20,3 +20,13 @@ The below example is filtering only on the day. Notice that the date is added to
 
 In addition to the date, a selection for a specific date can also be entered. Notice that there is a placeholder in the field that indicates that the filter will accept a two-character state abbreviation. If ‘nj’ is added to the field, the data table will be filtered by the date entered as well as for the state of ‘nj’ 
 
+![image](https://user-images.githubusercontent.com/88912539/143365104-7e82c015-9678-47db-9f42-09afbcd67220.png)
+
+While the site is attractive and provides the ability to filter through a significant Following an initial search, the filters may be ‘cleared’ in two different ways. 	
+1.	Remove the criteria from the filter field. As each criteria is removed, the data table will repopulate with the data that was previously filtered
+2.	Use the ‘refresh’ icon at the top of the page to refresh all the data. This will remove the filters and load all the available data from the data table. 
+
+## Summary:
+While the site is attractive and provides the ability to filter through a significant amount of data and only return the data of interest to the user, there is no ability to search by a date range or multiple options. The filters will only provide exactly what was entered. For example: if the user wanted to search base on a 5 day range they would have to conduct 5 different searches and the data would not be present within the same table. This is a significant drawback in the design of the site. 
+
+For future development, there are two main areas for development. First, provide the ability to enter multiple criteria into the filter fields. This would allow to filter based on a  range of dates instead of a single date and also make multiple selections for the other filters such as multiple states or shapes. Second, provide drop-down lists based on the unique values within the data table. Allow the user to pick the filter values based on a list instead of typing into a text field. This will be useful to eliminate typographical errors as well as provide guidance for the user relating to which options are available. For example, if the user does not know the options available for ‘shape’ the drop down list would provide ‘circle’, ‘formation’, ‘fireball’, ‘disc’ etc. 
